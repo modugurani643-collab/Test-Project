@@ -1,0 +1,167 @@
+.main-container
+{
+    text-align: center;
+    background-color: plum;
+    display: flex;
+}
+.box
+{
+    width: 200px;
+    height: 150px;
+    font-size: 8em;
+    border-radius: 17px;
+}
+#box1
+{
+    background-color:purple;
+    transition: width 5s;
+}
+#box2
+{
+    background-color:blue;
+    transition: width 4s;
+}
+#box3
+{
+    background-color:darkred;
+    transition: width 3s;
+}
+#box4
+{
+    background-color:red;
+    transition: width 2s;
+}
+#box5
+{
+    background-color: darkred;
+    transition: 2s;
+}
+#box5:hover
+{
+    background-color: forestgreen;
+    width: 500px;
+    height: 150px;
+}
+#box4:hover 
+{
+    background-color: green;
+    width: 500px;
+    height: 150px;
+}
+#box3:hover
+{
+    background-color: blueviolet;
+    width: 500px;
+    height: 150px;
+}
+#box2:hover
+{
+    background-color:lime;
+    width: 500px;
+    height: 150px;
+}
+#box1:hover
+{
+    background-color: crimson;
+    width: 500px;
+    height: 150px;
+}
+.newboxs
+{
+    border: 2px solid red;
+    display: flex;
+    background-color: palevioletred;
+}
+.newbox
+{
+    width: 200px;
+    height: 180px;
+    font-size: 8em;
+    border-radius: 16px;
+    background-color:aquamarine;
+    transition: width 2s; height: 2s;
+    transform: 2s;
+}
+#b1
+{
+    background-color:yellow;
+    transition-timing-function:inherit;
+}
+#b1:hover{
+    background-color: crimson;
+    width: 300px;
+}
+#b2
+{
+    background-color: deepskyblue;
+    transition-timing-function: linear;
+}
+#b2:hover{
+    background-color: darkblue;
+    width: 300px;
+}
+#b3
+{
+    background-color: greenyellow;
+    transition-timing-function: linear;
+}
+#b3:hover{
+    background-color:firebrick;
+    width: 300px;
+}
+#b4
+{
+    background-color: darkblue;
+    transition-timing-function: linear;
+}
+#b4:hover{
+    background-color:lawngreen;
+    width:300px;
+}
+#b5
+{
+    background-color: red;
+    transition-timing-function: linear;
+}
+#b5:hover{
+    background-color:mediumblue;
+    width: 300px;
+}
+.newrotate{
+width: 280px;
+height: 280px;
+border-radius: 16px;
+background-color: rgb(196, 18, 33);
+transition: width 2s,height 2s, transform 2s;
+}
+#newrotate:hover{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(102, 235, 13);
+    transform: rotate(200deg);
+}
+.scrolltext
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-size: 30px;
+    width: 100%;
+    color: rgb(245, 19, 68);
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid navy;
+    white-space: nowrap;
+}
+.scrolltext span
+{
+display: inline-block;
+padding-left: 100%;
+animation-name: scroll-right-left;
+animation-duration: 8s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes scroll-right-left{
+    from{transform:translateX(-100%);}
+    to{transform: translateX(100%);}
+}
